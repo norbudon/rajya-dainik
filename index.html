@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+             height:100px;
+            width: 300px;
+}
+
+section{ 
+            display: flex;
+            justify-content: start;
+        }
+        
+nav {
+    display: flex;
+    background-color: blue;
+    width: 100%;;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+
+i {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+li {
+    float: left;
+    padding-right: 30px;
+    
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position:absolute;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icon {
+ font-size: 2rem;
+ color: white;
+ padding-top: 6px;
+ float: left;
+ padding-left: 10px;
+ padding-right: 30px;
+ /* line-height: 50px; */
+}
+
+.icon:hover {
+    /* background-color: #ddd; */
+    color: black;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    justify-content: left;
+}
+
+
+
+</style>
+<body>
+    <section>
+        <img src="./assets/rajya.png">
+    </section>
+    <nav>
+        
+        <ul>
+            <div class="icon">
+            <i class="fa-solid fa-bars fa"></i>
+        </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="dropdown">
+                <a href="#">News Types</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sports News</a></li>
+                    <li><a href="#">Political News</a></li>
+                    <li><a href="#">Crime News</a></li>
+                    <li><a href="#">Financial News</a></li>
+                    <li><a href="#">Development News</a></li>
+            <li><a href="#">Contact</a></li></ul>
+            <div class="logo">
+                <li><a><i class="fa-solid fa-magnifying-glass"></a></i></li>
+                <li><a><i class="fa-regular fa-clock"></a></i></li>
+                <li><a><i class="fa-solid fa-bolt-lightning"></a></i></li>
+                </div>
+            <!-- <div class="btn">
+                <button><i class="fa-solid fa-right-to-bracket"></i>login</button>
+            </div> -->
+        
+    </nav>
+</body>
+</html>

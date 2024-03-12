@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'bodoni moda' , serif;
+            font-size: 1.2rem;
+        }
+
+        .container{
+            min-height:100vh ;
+            display: flex;
+            justify-content:space-evenly ;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(to right, #041308, #0b3317)
+        }
+
+        .left-text{
+            flex-basis: 30%;
+        }
+
+        .heading{
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+        }
+
+        .sub-heading{
+            color: #ddd;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .gallery{
+            flex-basis: 50%;
+            display: grid;
+            gap: 8px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 120px;
+        }
+
+        .box{
+            background-size: cover;
+            background-position: top;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            background-blend-mode:normal;
+            transition: all 2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .box:hover{
+            background-color: #999;
+            background-position: center;
+        }
+
+        .row-2{
+            grid-row: span 2;
+        }
+
+        .col-2{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">My Portfolio</h2>
+            <p class="sub-heading">Take the time to enjoy the little things, for one day you may look back and realize they were the big things.</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(./assets/images11.avif);">Bear</div>
+            <div class="box col-2" style="background-image: url(./assets/images22.avif);">Leopard</div>
+            <div class="box" style="background-image: url(./assets/images33.avif);">Zebra</div>
+            <div class="box row-2" style="background-image: url(./assets/images44.avif);">Elephant</div>
+            <div class="box col-2" style="background-image: url(./assets/images55.avif);">Deer</div>
+            <div class="box" style="background-image: url(./assets/images66.avif);">Tiger</div>
+            <div class="box col-2" style="background-image: url(./assets/images77.avif);">Red Panda</div>
+        </div>
+    </div>
+</body>
+</html>
